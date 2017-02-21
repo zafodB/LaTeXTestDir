@@ -1,0 +1,70 @@
+\documentclass{article}
+\usepackage{mathtools}
+\usepackage{bm}
+\usepackage{verbatim}
+\usepackage[margin=4cm]{geometry}
+\usepackage{minted}
+\usepackage[
+backend=biber
+citestyle=authoryear]{biblatex}
+
+\addbibresource{mendeley.bib}
+
+\begin{document}
+
+
+Ahoj!
+
+\begin{math}
+    c = a ^ 2 + b ^ 2 + 3/cos(x)
+\end{math}
+
+dolor sit amet
+
+\begin{equation}
+    c = a ^ 2 + b ^ 2 + 3/cos(x)    
+\end{equation}
+
+lorem ipsum
+
+\begin{displaymath}
+    c = a ^ 2 + b ^ 2 + 3/cos(x)
+\end{displaymath}
+
+dolor sit amesad $c = a ^ 2 + b ^ 2 + 3/cos(x)$
+
+\section*{Heading 007}
+\section{Heading 008}
+\subsection{lol}
+this is a sample text
+\section{Heading 009}
+e urna, vel dapibus diam viverr
+\subsection{yolololol}
+rpis, ut variu
+\subsubsection{wololo1}
+%Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum egestas iaculis turpis, ut varius risus auctor vel. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Curabitur nec 
+\textbf{    
+attis felis. Nunc nec tellus est. Donec eu convallis magna, vitae condimentum nibh. Praesent molestie vulputate orci ac molestie. Nulla eleifend at ante ac 
+}
+commodo. Quisque purus risus, finibus ac magna at, porta porttitor ante. 
+\textit{
+Praesent ut nisl lectus. Pellentesque eros urna, molestie quis ornare et, consequat in nibh. Aliquam pulvinar odio diam, luctus porttitor mauris rhoncus non. Morbi vel ex dictum, cursus ante sed, ornare nibh.
+}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=1\textwidth]{sharelatex.jpg}
+    \caption[Description for list of figures]{Such Description. Much Doge.}
+    \label{fig:my_figure}
+\end{figure}
+
+This text is to be referenced \cite{Schildt2014JavaReference}.
+
+\printbibliography
+
+\pagebreak
+
+\inputminted{java}{ApplicationMain.java}
+
+\end{document}
